@@ -1,0 +1,104 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="24.9.1">
+  <diagram name="Sayfa -1" id="l9zBkCy0wK1YmtMBqM-7">
+    <mxGraphModel dx="1050" dy="575" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1920" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="AqH8x-cFLDa5gISC6Tww-1" value="Başla" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="340" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="AqH8x-cFLDa5gISC6Tww-2" value="Paranı Belirle" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="308" y="60" width="96" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="AqH8x-cFLDa5gISC6Tww-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.55;entryY=0.167;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="AqH8x-cFLDa5gISC6Tww-1" target="AqH8x-cFLDa5gISC6Tww-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AqH8x-cFLDa5gISC6Tww-4" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Alıcağın Ürünü Belirle&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 18px; line-height: 40%;&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="267" y="120" width="147" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="AqH8x-cFLDa5gISC6Tww-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.603;entryY=-0.01;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="AqH8x-cFLDa5gISC6Tww-2" target="AqH8x-cFLDa5gISC6Tww-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AqH8x-cFLDa5gISC6Tww-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AqH8x-cFLDa5gISC6Tww-7" target="AqH8x-cFLDa5gISC6Tww-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AqH8x-cFLDa5gISC6Tww-7" value="Ürünün parasını Belirle" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="280.5" y="200" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="AqH8x-cFLDa5gISC6Tww-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.671;entryY=0.167;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="AqH8x-cFLDa5gISC6Tww-4" target="AqH8x-cFLDa5gISC6Tww-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AqH8x-cFLDa5gISC6Tww-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="AqH8x-cFLDa5gISC6Tww-7" target="AqH8x-cFLDa5gISC6Tww-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AqH8x-cFLDa5gISC6Tww-10" value="Hayır" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="AqH8x-cFLDa5gISC6Tww-12" target="AqH8x-cFLDa5gISC6Tww-4">
+          <mxGeometry x="-0.2762" y="13" relative="1" as="geometry">
+            <mxPoint x="280" y="153" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="270" y="160" />
+              <mxPoint x="270" y="149" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AqH8x-cFLDa5gISC6Tww-11" value="Evet&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AqH8x-cFLDa5gISC6Tww-12">
+          <mxGeometry x="0.328" y="20" relative="1" as="geometry">
+            <mxPoint x="190" y="290" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AqH8x-cFLDa5gISC6Tww-12" value="Paran ürün için yeterli mi?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="150" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="AqH8x-cFLDa5gISC6Tww-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="AqH8x-cFLDa5gISC6Tww-14" target="AqH8x-cFLDa5gISC6Tww-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AqH8x-cFLDa5gISC6Tww-14" value="Aldığın Ürüne ID belirleyip stoğa ekle" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="300" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AqH8x-cFLDa5gISC6Tww-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AqH8x-cFLDa5gISC6Tww-16" target="AqH8x-cFLDa5gISC6Tww-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AqH8x-cFLDa5gISC6Tww-16" value="Ürünü satacağın fiyatı belirle&lt;div&gt;ve satışa koy&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="300" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AqH8x-cFLDa5gISC6Tww-17" value="Evet&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AqH8x-cFLDa5gISC6Tww-18" target="AqH8x-cFLDa5gISC6Tww-21">
+          <mxGeometry x="-0.1429" y="25" relative="1" as="geometry">
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AqH8x-cFLDa5gISC6Tww-18" value="Ürün için verdiğin fiyat uygun mu ?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="282.5" width="90" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="AqH8x-cFLDa5gISC6Tww-19" value="Hayır" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.429;entryY=0.017;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="AqH8x-cFLDa5gISC6Tww-18" target="AqH8x-cFLDa5gISC6Tww-16">
+          <mxGeometry x="-0.016" y="8" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AqH8x-cFLDa5gISC6Tww-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="AqH8x-cFLDa5gISC6Tww-21" target="AqH8x-cFLDa5gISC6Tww-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AqH8x-cFLDa5gISC6Tww-21" value="Ürün satılana Kadar bekle" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="445" y="430" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AqH8x-cFLDa5gISC6Tww-22" value="Evet" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="AqH8x-cFLDa5gISC6Tww-24" target="AqH8x-cFLDa5gISC6Tww-27">
+          <mxGeometry y="20" relative="1" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="332.5" y="555" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AqH8x-cFLDa5gISC6Tww-23" value="Hayır" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="AqH8x-cFLDa5gISC6Tww-24" target="AqH8x-cFLDa5gISC6Tww-21">
+          <mxGeometry y="-10" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AqH8x-cFLDa5gISC6Tww-24" value="ürün satıldı mı?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="415" width="85" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="AqH8x-cFLDa5gISC6Tww-27" value="Bitir" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="292.5" y="560" width="80" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
