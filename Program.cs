@@ -11,7 +11,7 @@ namespace salesDepot
     {
         public static void Main(string[] args)
         {
-            Console.Write("lütfen toplam sermayenizi girin");
+            Console.Write("lütfen toplam sermayenizi girin: ");
             decimal balance = decimal.Parse(Console.ReadLine());
 
             string selection;
@@ -55,6 +55,7 @@ namespace salesDepot
 
             static void BuyProduct(ref decimal balance)
             {
+                Console.Clear();
                 var product = ProgramObjetcs.Products;
                 Console.WriteLine("Lütfen ürünün ismini girin");
                 string Name = Console.ReadLine();
@@ -71,19 +72,25 @@ namespace salesDepot
                 };
                 if (balance < Price * Quantity)
                 {
+                    Console.Clear();
                     Console.WriteLine("Yeterli bakiyeniz yok.");
+                    Thread.Sleep(1000);
                     return;
                 }
                 else if (balance > Price * Quantity)
                 {
-                    Console.WriteLine("Ürün başarıyla eklendi.");
+                    Console.Clear();
                     balance -= Price * Quantity;
                     product.Add(newProduct);
+                    Console.WriteLine($"Ürün başarıyla eklendi. Yeni Bakiyeniz: {balance}");
+                    Thread.Sleep(1000);
+                    
                 }
             }
 
             static void ListProducts()
             {
+                Console.Clear();
                 var products = ProgramObjetcs.Products;
                 Console.WriteLine($"{string.Join(new string('-', 20), ProgramObjetcs.Products.Select(p1 => ($"\n\nID: {p1.ID} \nÜrün İsmi: {p1.Name} \nÜrün Fiyatı: {p1.Price} \nÜrün Miktarı: {p1.Quantity}\n\n")))}\nMenüye dönmek için Enter tuşuna basın.\n");
                 Console.ReadLine();
@@ -92,6 +99,8 @@ namespace salesDepot
 
             static void SellProduct(ref decimal balance)
             {
+                Console.Clear();
+                Console.WriteLine($"{string.Join(new string('-', 20), ProgramObjetcs.Products.Select(p1 => ($"\n\nID: {p1.ID} \nÜrün İsmi: {p1.Name} \nÜrün Fiyatı: {p1.Price} \nÜrün Miktarı: {p1.Quantity}\n\n")))}\n\n");
                 Console.Write("Satmak istediğiniz ürünün ID'sini girin: ");
                 int tempID = int.Parse(Console.ReadLine());
                 var product = ProgramObjetcs.Products.FirstOrDefault(p1 => p1.ID == tempID);
@@ -112,7 +121,7 @@ namespace salesDepot
                     {
                         Console.Clear();
                         Console.WriteLine($"Malesef depoda bu üründen istediğiniz miktarda yok. Elimizdeki ürün sayısı: {product.Quantity}");
-                        Thread.Sleep(1000);
+                        Thread.Sleep(1500);
                     }
                 }
                 else
@@ -125,25 +134,29 @@ namespace salesDepot
 
             static void AddToStock(ref decimal balance)
             {
-
+                Console.Clear();
+                Console.WriteLine($"{string.Join(new string('-', 20), ProgramObjetcs.Products.Select(p1 => ($"\n\nID: {p1.ID} \nÜrün İsmi: {p1.Name} \nÜrün Fiyatı: {p1.Price} \nÜrün Miktarı: {p1.Quantity}\n\n")))}\n\n");
                 Console.Write("lütfen eklemek istediğiniz ürünün ID'sini giriniz:");
                 int tempID = int.Parse(Console.ReadLine());
                 var product = ProgramObjetcs.Products.FirstOrDefault(p1 => p1.ID == tempID);
                 if (product != null)
                 {
-                    Console.Clear();
-                    Console.WriteLine("Lütfen eklemek istediğiniz ürün miktarını giriniz:");
+                    
+                    Console.Write("Lütfen eklemek istediğiniz ürün miktarını giriniz:");
                     int addQuantity = int.Parse(Console.ReadLine());
                     if (balance >= addQuantity * product.Price)
                     {
                         Console.Clear();
                         product.Quantity += addQuantity;
-                        product.Price -= balance;
-                        Console.WriteLine($"ürün başarıyla depoya eklendi. Yeni ürün miktarı: {product.Quantity}. Yeni Bakiye: {balance} ");
+                        balance -= addQuantity * product.Price;
+                        Console.WriteLine($"Ürün başarıyla depoya eklendi. Yeni ürün miktarı: {product.Quantity}. Yeni Bakiye: {balance} ");
+                        Thread.Sleep(1000);
                     }
                     else
                     {
+                        Console.Clear();
                         Console.WriteLine("Yeterli bakiyeniz yok.");
+                        Thread.Sleep(1000);
                         return;
                     }
                 }
